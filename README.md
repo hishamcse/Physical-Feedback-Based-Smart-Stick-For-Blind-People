@@ -61,25 +61,25 @@ correctly if Arduino is powered from different sources if they do not share a co
 
 ### Working GPS<a name="gps"></a>
    #### Problem
-       The GPS module was not getting any signal.
+   The GPS module was not getting any signal.
    #### Solution
-       The GPS module did not work indoors. We had to go to an open space and waited around 5 to 10 minutes
+   The GPS module did not work indoors. We had to go to an open space and waited around 5 to 10 minutes
 for it to get the proper signal and provide the location.
 
 ### GPS and SONAR in same Arduino<a name="gps-sonar"></a>
    #### Problem
-       We needed to continuously read both the SONAR sensor and GPS sensor. But it seems like that is not
+   We needed to continuously read both the SONAR sensor and GPS sensor. But it seems like that is not
 possible. [This](https://stackoverflow.com/questions/49782864/using-ultrasonic-sensor-hc-sr04-and-gps-neogps-6m-together-on-arduino-uno) question’s answer dives deeper on this issue.
    #### Solution
-       We ended up using 2 Arduino. Useful Link regarding this issue: [GPS & Sonar together at UNO](https://stackoverflow.com/questions/49782864/using-ultrasonic-sensor-hc-sr04-and-gps-neogps-6m-together-on-arduino-uno)
+   We ended up using 2 Arduino. Useful Link regarding this issue: [GPS & Sonar together at UNO](https://stackoverflow.com/questions/49782864/using-ultrasonic-sensor-hc-sr04-and-gps-neogps-6m-together-on-arduino-uno)
 
 ### SONAR Trig and Echo on Same Pin<a name="sonar-trig"></a>
    #### Problem
-       We found in an article that SONAR can work even if the Trig and Echo pin is connected to the same pin of
+   We found in an article that SONAR can work even if the Trig and Echo pin is connected to the same pin of
 Arduino. We found it to be true while powering up the SONARS from Arduino. However, when we powered
 up the sensors and Arduino from an external source, the SONARs stopped working properly
    #### Solution
-       Used 2 different pins for Echo and Trig.
+   Used 2 different pins for Echo and Trig.
    
 
 ## Contributors:<a name="contribute"></a>
