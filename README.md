@@ -48,14 +48,14 @@
 ## Problems & Solution:<a name="api-reference"></a>
 ### Power issue<a name="power"></a>
   #### Problem
-       We first naively tried to power up all our components using Arduino’s VCC and GND pin. This obviously
+  We first naively tried to power up all our components using Arduino’s VCC and GND pin. This obviously
 did not work since the VCC pin of Arduino may supply around .4A when powered up using USB. We did
 not face any issues with this approach at first. The servo motors, sonar sensors, GPS sensors all seem to
 work fine. However, the GSM module did not work reliably. It did power up, but most of the time it could
 not connect to the network. Or even if connected to the network, the network dropped immediately we tried
 to make a call or send an SMS.
-   #### Solution
-       We cut a USB charging cable, plugged it into a 10W power bank, and used it to power up all the components
+  #### Solution
+  We cut a USB charging cable, plugged it into a 10W power bank, and used it to power up all the components
 including the Arduino (Using Vin and GND pins). We found that the modules and sensors may not work
 correctly if Arduino is powered from different sources if they do not share a common ground.
 
