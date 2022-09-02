@@ -1,6 +1,6 @@
 
 <p align="center">
- <img width="250px" 
+ <img width="300px" 
       style="border-radius:50%" src="https://github.com/hishamcse/Physical-Feedback-Based-Smart-Stick-For-Blind-People/blob/master/Final%20Videos/algorithm_1.jpg"  alt="Smart Stick"/>
 </p>
 
